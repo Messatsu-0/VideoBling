@@ -1,4 +1,4 @@
-:5173 {
+:{$PORT:5173} {
   encode gzip zstd
 
   @api path /api/*

@@ -15,6 +15,7 @@
 - `backend/` FastAPI + SQLAlchemy + Huey + ffmpeg pipeline
 - `web/` React + Vite + Tailwind + Framer Motion + GSAP
 - `runtime/` 本地运行数据（配置、队列、任务产物）
+- `deploy/cloudbase/` CloudBase Run（中国大陆优先）部署文档
 - `deploy/railway/` Railway 公网部署文档
 - `tests/` 单测/集成/e2e
 
@@ -47,14 +48,14 @@
 - `hook_video_norm`
 - `final_video`
 
-## 公网访问（合规最简方案，推荐）
+## 公网访问（合规）
 
-不购买云服务器、且不使用任何内网穿透时，推荐直接部署到 Railway。
+不购买云服务器、且不使用任何内网穿透时：
 
-- 详细步骤见：`deploy/railway/README.md`
-- 架构：`backend(API+worker)` + `web` 两服务
-- 仅 `web` 开公网域名，`backend` 保持私网
-- `backend` 启动命令：`sh backend/scripts/start_api_worker.sh`
+- 中国大陆用户优先：`deploy/cloudbase/README.md`
+- 海外/国际访问优先：`deploy/railway/README.md`
+
+两种方案均为 `backend(API+worker)` + `web` 两服务，且仅 `web` 暴露公网。
 
 ## Docker 本地一键运行
 

@@ -1,0 +1,9 @@
+:5173 {
+  encode gzip zstd
+
+  @api path /api/*
+  reverse_proxy @api {$API_PROXY_TARGET}
+
+  try_files {path} /index.html
+  file_server
+}

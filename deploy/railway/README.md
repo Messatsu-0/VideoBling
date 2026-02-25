@@ -41,7 +41,7 @@
 - Source Repo：当前仓库
 - Builder：Dockerfile
 - Dockerfile Path：`web/Dockerfile`
-- Start Command：保持默认（Dockerfile 内 `npm run dev`）
+- Start Command：保持默认（Dockerfile 内 `caddy run`，生产模式）
 
 ### 环境变量
 

@@ -83,7 +83,7 @@ cd /Users/bytedance/Documents/VideoBling_local_0225
 
 - `backend`：FastAPI API 服务（内置 ffmpeg/ffprobe）
 - `worker`：Huey 异步任务执行器
-- `web`：Vite React 前端
+- `web`：React 生产静态站点（Caddy 托管 + `/api` 反向代理）
 - 运行数据持久化到宿主机 `runtime/`
 
 ## 本机直接运行（非 Docker）

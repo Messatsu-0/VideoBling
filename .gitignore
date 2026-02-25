@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+node_modules/
+dist/
+web/dist/
+runtime/*.sqlite
+runtime/*.sqlite3
+runtime/*.sqlite-wal
+runtime/*.sqlite-shm
+runtime/jobs/*
+!runtime/jobs/.gitkeep
+runtime/config.json
+.DS_Store
